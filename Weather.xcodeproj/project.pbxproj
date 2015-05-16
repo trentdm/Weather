@@ -14,6 +14,8 @@
 		968A119D1B028BD800F6F1BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968A119C1B028BD800F6F1BE /* Images.xcassets */; };
 		968A11A01B028BD800F6F1BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968A119E1B028BD800F6F1BE /* LaunchScreen.xib */; };
 		968A11AC1B028BD800F6F1BE /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A11AB1B028BD800F6F1BE /* WeatherTests.swift */; };
+		968A11BC1B02B1CD00F6F1BE /* TempRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A11BB1B02B1CD00F6F1BE /* TempRequestHandler.swift */; };
+		96A2111A1B079EA0004FBE4F /* WuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A211191B079EA0004FBE4F /* WuResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		968A11A51B028BD800F6F1BE /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		968A11AA1B028BD800F6F1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968A11AB1B028BD800F6F1BE /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		968A11BB1B02B1CD00F6F1BE /* TempRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempRequestHandler.swift; sourceTree = "<group>"; };
+		96A211191B079EA0004FBE4F /* WuResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WuResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		968A118F1B028BD800F6F1BE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				96A211181B079E79004FBE4F /* Models */,
 				968A11921B028BD800F6F1BE /* AppDelegate.swift */,
 				968A11971B028BD800F6F1BE /* ViewController.swift */,
 				968A11991B028BD800F6F1BE /* Main.storyboard */,
@@ -86,6 +91,7 @@
 				968A119E1B028BD800F6F1BE /* LaunchScreen.xib */,
 				968A11941B028BD800F6F1BE /* Weather.xcdatamodeld */,
 				968A11901B028BD800F6F1BE /* Supporting Files */,
+				968A11BB1B02B1CD00F6F1BE /* TempRequestHandler.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -113,6 +119,14 @@
 				968A11AA1B028BD800F6F1BE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A211181B079E79004FBE4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96A211191B079EA0004FBE4F /* WuResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968A11BC1B02B1CD00F6F1BE /* TempRequestHandler.swift in Sources */,
 				968A11981B028BD800F6F1BE /* ViewController.swift in Sources */,
 				968A11961B028BD800F6F1BE /* Weather.xcdatamodeld in Sources */,
+				96A2111A1B079EA0004FBE4F /* WuResponse.swift in Sources */,
 				968A11931B028BD800F6F1BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +431,7 @@
 				968A11B11B028BD800F6F1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		968A11B21B028BD800F6F1BE /* Build configuration list for PBXNativeTarget "WeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +440,7 @@
 				968A11B41B028BD800F6F1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
